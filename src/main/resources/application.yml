@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: spring-ai-langgraph-refund-demo
+  ai:
+    model:
+      chat: deepseek
+      embedding: none
+      image: none
+      moderation: none
+      audio:
+        speech: none
+        transcription: none
+    deepseek:
+      api-key: ${DEEPSEEK_API_KEY:}
+      base-url: ${DEEPSEEK_BASE_URL:https://ark.cn-beijing.volces.com/api/v3}
+      chat:
+        model: ${DEEPSEEK_MODEL:deepseek-v4-flash-ga-260731}
+        thinking:
+          type: disabled
+        max-tokens: 1024
+
+server:
+  port: ${SERVER_PORT:8080}

@@ -1,0 +1,39 @@
+# Build output and runtime data
+target/
+*.log
+/.graph-checkpoints/
+/logs/
+
+# Optional upstream reference checkouts
+/Ref/
+/ref-source/*/
+
+# Local editor and agent metadata
+.idea/
+.vscode/
+*.iml
+/.github/modernize/
+
+# Local environment and private Spring configuration
+.env
+.env.*
+!.env.example
+!.env.*.example
+application-private.*
+application-local.*
+application-secrets.*
+!application-private.example.*
+!application-local.example.*
+
+# Private keys and keystores
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+*.keystore
+
+# Local conversation exports and OS metadata
+/docs/chat.md
+.DS_Store
+Thumbs.db

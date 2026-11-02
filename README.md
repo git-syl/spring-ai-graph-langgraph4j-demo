@@ -42,7 +42,9 @@ Spring AI 聊天历史与 LangGraph4j 工作流 checkpoint 分开管理。聊天
 
 ### 与 Spring Statemachine 对照
 
-参考：[《Spring Statemachine》官方文档](https://docs.spring.io/spring-statemachine)。下表展示同一退款流程在两种编排方式中的实现思路。
+参考：[《Spring Statemachine》官方文档](https://docs.spring.io/spring-statemachine/docs/current/reference/)。下表展示同一退款流程在两种编排方式中的实现思路。
+
+不想用langgraph4j？试试看Spring Statemachine来实现图。
 
 | 当前 LangGraph4j 实现 | Spring Statemachine 实现思路 |
 | --- | --- |
@@ -232,7 +234,9 @@ The flow is `ChatClient + SessionAdvisors → RefundWorkflowTools → validation
 
 ### Comparison with Spring Statemachine
 
-Reference: [Spring Statemachine documentation](https://docs.spring.io/spring-statemachine). The table maps the same refund workflow to the two orchestration approaches.
+Reference: [Spring Statemachine documentation](https://docs.spring.io/spring-statemachine/docs/current/reference/). The table maps the same refund workflow to the two orchestration approaches.
+
+Prefer an alternative to LangGraph4j? Try implementing the graph with Spring Statemachine.
 
 | Current LangGraph4j implementation | Spring Statemachine approach |
 | --- | --- |
